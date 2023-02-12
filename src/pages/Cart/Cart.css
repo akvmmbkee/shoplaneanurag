@@ -1,0 +1,99 @@
+
+.cartDisplay{
+    gap: 0.5px;
+}  
+  .left{
+    float:left;
+    width: 75%;
+}
+.btnWithToatalvalue{
+    margin-left: 73%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.right{
+    float:left;
+    margin-top: 12px ;
+    padding: 5px;
+    width: 24%;
+    
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(245, 240, 240);
+    border-radius: 0.5rem;
+    align-items: center;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-around;
+}
+.subtotal-container{
+    margin: 11px;
+    width: 90%;
+    
+}
+.btn.btn-warning.subtotal-container:hover{
+    background-color: none;
+}
+.cartBill.btn-group.btn-group-toggle{
+display: none;
+}
+@media screen and (max-width:600px){
+    
+     .left{
+        float: none;
+        width: 100%;
+   }
+   
+   .right{
+   
+    margin-top: 12px ;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    
+    background-color: rgb(245, 240, 240);
+    border-radius: 0.5rem;
+    
+}
+.card-body{
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card{
+    width: 100%; 
+}
+.cartBill.btn-group.btn-group-toggle{
+    display: flex;
+    }
+.cartBillP{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    height:35px ;
+    background-color:rgb(59, 163, 248);
+    margin-top: 5px;
+}
+.cartBill{
+    height: 40px;
+    width: 100%;
+    
+
+
+}
+
+
+}
+/* .gradient-custom {
+    /* fallback for old browsers */
+    /* background: #6a11cb; */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)); */
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)) */
+ /* } */
