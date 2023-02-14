@@ -1,12 +1,3 @@
-/* 
-.card-main{
-    width: 18rem;
-    padding: 6px;
-}
-
-.card-title{
-    font-size: large;
-} */
 
 
 
@@ -18,6 +9,13 @@ h2 {
 	text-transform: uppercase;
 	position: relative;
 	margin: 30px 0 60px;
+}
+
+
+.btns{
+
+	background-color: #7ac400;
+	color: #ffc000;
 }
 
 
@@ -77,6 +75,9 @@ h2 {
 	margin-right: 5px;
 }
 
+
+
+
 .wish-icon {
 	float: right;
 	right: 10px;
@@ -88,6 +89,8 @@ h2 {
 }
 .navbar-brand.removeBtn{
 	cursor: pointer;
+	color: red;
+	
 }
 .favBtn{
 	display: flex;

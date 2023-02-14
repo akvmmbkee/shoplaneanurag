@@ -27,29 +27,15 @@ function Footer() {
                     <span style={{ paddingLeft: 5 }}>
                         {new Date().getFullYear()} ShopLane. All Rights
                         Reserved.
+
+                        
+
                     </span>
+                    <p className="foot">ShopLane.com</p>
                 </div>
-                <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    className="item3"
-                >
-                    <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    className="item4"
-                >
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a
-                    href="https://youtube.com/"
-                    target="_blank"
-                    className="item5"
-                >
-                    <FontAwesomeIcon icon={faYoutube} />
-                </a>
+              
+               
+               
 
                
             </div>

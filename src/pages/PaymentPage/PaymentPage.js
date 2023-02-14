@@ -13,6 +13,7 @@ function Payment() {
     const dispatch=useDispatch();
     console.log(username);
     function hendleSubmit(){
+        alert("Your order is placed")
         navigate("/");
         dispatch(clearCart());
 
