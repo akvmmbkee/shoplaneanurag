@@ -3,7 +3,7 @@
 
 .card {
     width: 100%;
-    box-shadow: purple 0px 3px 8px;
+    box-shadow: springgreen 0px 3px 8px;
     background: #fff;
     border-radius: 0px;
     position: relative;
@@ -51,11 +51,15 @@
 
 .fab.fa-cc-discover {
     font-size: 32px;
-    color: purple;
+    color: orange;
 }
 
 .c-green {
     color: green;
+}
+
+.form{
+    margin-right: 50px;
 }
 
 .box {
@@ -96,10 +100,6 @@
     background: none;
     z-index: 1;
     box-shadow: none;
-}
-
-.onsubmit{
-    background-color: #1A73E8;
 }
 
 .form__label {

@@ -17,7 +17,7 @@ function Register() {
     alert("Successful SignUP")
     navigate("/");
     dispatch(addUser(user.name));
-    fetch("http://localhost:4100/api/auth/register", {
+    fetch("http://localhost:3000/api/auth/register", {
       method: "POST",
       body: JSON.stringify(user),
       headers: {
@@ -37,7 +37,7 @@ function Register() {
         console.log(err);
       });
     console.log(user);
-  }
+   }
 
   return (
     <div>
@@ -152,94 +152,3 @@ export default Register;
 
 
 
-
-      {/* <div className="Sign-container"> */}
-        {/*<div class="mb-3">
-          <h2 class="text-uppercase text-center mb-1 mt-1">Create an account</h2>
-          <label for="exampleFormControlInput1" class="form-label">
-            Email address
-          </label>
-          <input
-            onInput={(e) => {
-              user.email = e.target.value;
-              setUser(user);
-            }}
-            value={user.email}
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"></input>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Full Name
-          </label>
-          <input
-            onInput={(e) => {
-              user.name = e.target.value;
-              setUser(user);
-            }}
-            value={user.name}
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Name"></input>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Password
-          </label>
-          <input
-            onInput={(e) => {
-              user.password = e.target.value;
-              setUser(user);
-            }}
-            value={user.password}
-            type="password"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"></input>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Date of Birth
-          </label>
-          <input
-            onInput={(e) => {
-              user.dob = e.target.value;
-              setUser(user);
-            }}
-            value={user.dob}
-            type="date"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="DDMMYYYY"></input>
-        </div>
-        <div className="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
-            Country
-          </label>
-          <select
-            class="form-select"
-            aria-label="Default select example"
-            onChange={(e) => {
-              user.country = e.target.value;
-              setUser(user);
-            }}>
-            <option value="1">India</option>
-            <option value="2">USA</option>
-            <option value="3">UK</option>
-          </select>
-        </div>
-        <input
-          onClick={handleSubmit}
-          className="btn btn-primary btn-block mb-4"
-          value="Signup"
-          type="submit"
-        /> */}
-        {/* <p class="text-center text-muted ">Have already an account? <a href="#!"
-          class="fw-bold text-body">
-          <Link to="/Login">Login here</Link></a></p>
-
-      </div> */}
-      

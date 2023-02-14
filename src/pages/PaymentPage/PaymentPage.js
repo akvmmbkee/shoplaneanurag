@@ -21,68 +21,57 @@ function Payment() {
 
 
         username.length > 0 ? (
-            <div className=" mt-80 ">
+            <div class=" mt-80 ">
               <div><Header /></div>
-              <div className="container paymentBox">
-        <div className="row">
+              <div class="container paymentBox">
+        <div class="row">
             
-            <div className="col-12 mt-4">
-                <div className="card p-3">
-                    <p className="mb-0 fw-bold h4">Payment Methods</p>
+            <div class="col-12 mt-4">
+                <div class="card p-3">
+                    <p class="mb-0 fw-bold h4">Payment Page</p>
                 </div>
             </div>
-            <div className="col-12">
-                <div className="card p-3">
-                    <div className="card-body border p-0">
-                        <p>
-                            <a className="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
-                                aria-controls="collapseExample">
-                                <span className="fw-bold">Billing Summary</span>
-                                
-                                
-                            </a>
-                        </p>
+            <div class="col-12">
+                <div class="card p-3">
+                   
+                    <div class="card-body border p-0">
                        
-                    </div>
-                    <div className="card-body border p-0">
-                        
-                        <div className="collapse show p-3 pt-0" id="collapseExample">
-                            <div className="row">
-                                <div className="col-lg-5 mb-lg-0 mb-3">
+                        <div class="collapse show p-3 pt-0" id="collapseExample">
+                            <div class="row">
+                                <div class="col-lg-5 mb-lg-0 mb-3">
                                     
                                 </div>
-                                <div className="col-lg-7">
-                                    <form action="" className="form">
-                                        <div className="row">
-                                            <div className="col-8">
-                                                <div className="form__div">
-                                                    <input type="text" className="form-control" placeholder=" "/>
-                                                    <label for="" className="form__label">Card Number</label>
+                                <div class="col-lg-7">
+                                    <form action="" class="form">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="form__div">
+                                                    <input type="text" class="form-control" placeholder="Card Number "/>
+                                                    
                                                 </div>
                                             </div>
 
-                                            <div className="col-6">
-                                                <div className="form__div">
-                                                    <input type="text" className="form-control" placeholder=" "/>
-                                                    <label for="" className="form__label">MM / yy</label>
+                                            <div class="col-6">
+                                                <div class="form__div">
+                                                    <input type="text" class="form-control" placeholder=" MM / yy"/>
+                                                  
                                                 </div>
                                             </div>
 
-                                            <div className="col-2">
-                                                <div className="form__div">
-                                                    <input type="password" className="form-control" placeholder=" "/>
-                                                    <label for="" className="form__label">cvv code</label>
+                                            <div class="col-2">
+                                                <div class="form__div">
+                                                    <input type="password" class="form-control" placeholder=" CVV"/>
+                                                  
                                                 </div>
                                             </div>
-                                            <div className="col-8">
-                                                <div className="form__div">
-                                                    <input type="text" className="form-control" placeholder=" "/>
-                                                    <label for="" className="form__label">name on the card</label>
+                                            <div class="col-8">
+                                                <div class="form__div">
+                                                    <input type="text" class="form-control" placeholder=" Card Name"/>
+                                                    
                                                 </div>
                                             </div>
-                                            <div className="col-8">
-                                                <div className="btn btn-primary onsubmit" onClick={hendleSubmit}>Sumbit</div>
+                                            <div class="col-8">
+                                                <div class="btn btn-primary w-100" onClick={hendleSubmit}>Sumbit</div>
                                             </div>
                                         </div>
                                     </form>
@@ -106,7 +95,7 @@ function Payment() {
             </div>
           ) : (
                 
-            <div className=" mt-80">
+            <div class=" mt-80">
                 {alert("Please Login or Sign up for complete the order")}
                     
                     <Login></Login>

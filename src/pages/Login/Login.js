@@ -13,7 +13,7 @@ function Login() {
   const dispatch=useDispatch();
   let location = useLocation();
   
-  //const[userName,setUserName]=useState([]);
+  
 
   console.log(location.pathname);
   const [formData, setFormData] = useState({
@@ -27,13 +27,10 @@ function Login() {
   const { email, password } = formData;
   function handleSubmit(e) {
     e.preventDefault();
-    // console.log(e.target[0].value);
-    // console.log(e.target[1].value);
+    
     console.log("cheking")
     if (loginDetails.email === email && loginDetails.password === password) {
-      //updateState(true);
-      //console.log("todo")
-      //setUserName=loginDetails.name;
+      
       alert("Succusful Login")
       dispatch(addUser(loginDetails.name));
       navigate("/");
