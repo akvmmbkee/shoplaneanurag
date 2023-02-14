@@ -15,8 +15,7 @@ function Home() {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((jsonResponse) => {
-        //console.log("response received");
-        // we are changing state of component.
+       
         setProducts(jsonResponse);
         setError();
       })
@@ -42,7 +41,7 @@ function Home() {
       <div className="container">
         {error &&
         <Loader></Loader>
-        //  <h2 className="mt-3">No Products to Show</h2>
+       
       }
         
 

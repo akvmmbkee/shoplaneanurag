@@ -13,13 +13,13 @@ const Cart = (props) => {
   const totalQuantity = useSelector(cartSelector).totalQuantity;
   const userName=useSelector(cartSelector).userInfo;
   let navigat=useNavigate();
-  //console.log(items.length);
+  
   const dispatch = useDispatch();
-  //dispatch(getTotal());
+ 
   useEffect(() => {
     dispatch(getTotal());
   }, [items, dispatch])
-  //console.log(totaBill)
+ 
   const handleClearCart = () => {
     dispatch(clearCart());
   };

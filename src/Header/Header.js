@@ -52,7 +52,7 @@ function Header(props) {
                   
                 </div>
                 <div >
-                  {/* <span>&nbsp;Login <br></br>&nbsp;or Sign Up</span> */}
+                
                   <span  STYLE="font-size:18px" >&nbsp;{username.length>0?username :"Login  or Sign Up"}&nbsp;</span>
                 </div>
               </div>
