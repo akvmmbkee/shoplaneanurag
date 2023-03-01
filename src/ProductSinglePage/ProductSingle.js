@@ -90,8 +90,7 @@ function ProductSingle() {
                                     <div class="product p-4">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center">
-                                                {/* <i class="fa fa-long-arrow-left"></i>
-                                                <span class="ml-1">Back</span>  */}
+                                               
                                                 </div>
                                                 {
                                                 changeColor === false ? (<i onClick={handleAddToFavourite} className="fa fa-heart"></i>) : (
@@ -113,7 +112,7 @@ function ProductSingle() {
                                        
                                         <div class="cart mt-4 align-items-center">
                                             
-                                            {/* <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> */}
+                                            
                                             {
                                                 changeBtn === false ? (<button onClick={handleAddToCartEvent} className="btn btn-primary">
                                                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="false"></i>  Add To Cart

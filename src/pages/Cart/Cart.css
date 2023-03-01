@@ -19,9 +19,10 @@
     padding: 5px;
     width: 24%;
     
+    
     align-items: center;
     padding: 1rem;
-    background-color: rgb(245, 240, 240);
+    background-color: rgb(90, 220, 144);
     border-radius: 0.5rem;
     align-items: center;
 }
@@ -54,7 +55,7 @@ display: none;
     width: 100%;
     align-items: center;
     
-    background-color: rgb(245, 240, 240);
+    background-color: rgb(55, 157, 180);
     border-radius: 0.5rem;
     
 }

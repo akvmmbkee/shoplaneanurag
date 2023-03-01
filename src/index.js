@@ -17,7 +17,7 @@ import WomenCloth from './pages/WomenCloth/WomenCloth';
 import ProductSingle from './ProductSinglePage/ProductSingle';
 import NotFoundPage from "./pages/PageNotFound/Error";
 import Payment from "./pages/PaymentPage/PaymentPage";
-import Address from "./pages/Address/Address";
+
 
 
 
@@ -41,7 +41,7 @@ root.render(
        
         <Route path="*" element={<NotFoundPage />}></Route>
         <Route path="/payment" element={<Payment />}></Route>
-        <Route path="/address" element={<Address />}></Route>
+       
         
       </Routes>
     </BrowserRouter>
