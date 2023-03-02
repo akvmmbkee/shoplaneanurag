@@ -36,21 +36,18 @@ const cartSlice = createSlice({
         },
         removeFromCart:(state,action)=>{
             const filteredCart = state.value.filter((item) => item.id !== action.payload);
-                //console.log(filteredCart);
-                //console.log(action.payload)
+               
                 state.value=filteredCart;
             
         },
         removeFromFavCart:(state,action)=>{
             const filteredCart = state.Favourite.filter((item) => item.id !== action.payload);
-                //console.log(filteredCart);
-                //console.log(action.payload)
+               
                 state.Favourite=filteredCart;
             
         },
         decreaseCart: (state,action)=>{
-            //If item's quantity is >1, then decrement the quantity
-            //If Item's quantity is =1, then remove that item from list.
+          
             const itemIndex = state.value.findIndex((item)=>item.id === action.payload.id);
             if(state.value[itemIndex].quantity > 1){
                 state.value[itemIndex].quantity -= 1;
@@ -73,8 +70,7 @@ const cartSlice = createSlice({
          
             state.totalPrice = parseFloat(price.toFixed(2));
             state.totalQuantity = quantity;
-            //console.log(state.totalPrice);
-            //console.log(state.totalQuantity);
+           
         },
         clearCart(state) {
             state.value = [];

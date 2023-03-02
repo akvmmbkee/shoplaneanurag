@@ -6,18 +6,17 @@ import { useEffect, useState } from "react";
 import BarLoader from "../../PageLoader/PageLoader";
 
 function WomenCloth() {
-  //console.log("rerendering");
+  
   const [products, setProducts] = useState([]);
   const [error, setError] = useState();
-    // const [count, setCount] = useState();
-  //   const [click2, setClick2] = useState(0);
+    
   // async call.
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/category/women's clothing")
       .then((res) => res.json())
       .then((jsonResponse) => {
-        //console.log("response received");
+        
         // we are changing state of component.
         setProducts(jsonResponse);
         setError();
@@ -28,10 +27,7 @@ function WomenCloth() {
       });
   }, []);
 
-  // function notifyHome(count){
-  //   console.log("Home is notified");
-  //   setCount(count);
-  // }
+
 
   return (
     products.length === 0 ? (
@@ -47,7 +43,7 @@ function WomenCloth() {
       <Header  />
       <div className="container">
         {error &&
-         //<h2 className="mt-3">No Products to Show</h2>
+        
          <BarLoader></BarLoader>
          }
         

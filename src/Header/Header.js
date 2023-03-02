@@ -16,7 +16,7 @@ function Header(props) {
   console.log(username);
   var totalNoOfCartItem = 0
   if (cartItemCount > cartItemCount2) { totalNoOfCartItem = cartItemCount } else { totalNoOfCartItem = cartItemCount2 }
-  //console.log(cartItemCount);
+
   const location =useLocation();
   const {pathname}=location;
   const splitLocation = pathname.split("/");

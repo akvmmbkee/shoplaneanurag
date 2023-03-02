@@ -28,18 +28,18 @@ function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     
-    console.log("cheking")
-    if (loginDetails.email === email && loginDetails.password === password) {
+    // console.log("cheking")
+    // if (loginDetails.email === email && loginDetails.password === password) {
       
-      alert("Succusful Login")
-      dispatch(addUser(loginDetails.name));
-      navigate("/");
+    //   alert("Succusful Login")
+    //   dispatch(addUser(loginDetails.name));
+    //   navigate("/");
 
      
-    }
-    else {
-      alert("Please Re-Login with correct Crede")
-    }
+    // }
+    // else {
+      alert("Login successfully")
+    // }
     
   }
   function handleChange(e) {

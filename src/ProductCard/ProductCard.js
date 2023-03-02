@@ -11,7 +11,7 @@ function ProductCard(props) {
   const [changeColor, setChangeColor] = useState(false);
   const [changeBtn, setchangeBtn] = useState(false);
   const nav = useNavigate();
-  // const items=useSelector(cartSelector).value;
+
 
   let product = props.item;
   const dispatch = useDispatch();

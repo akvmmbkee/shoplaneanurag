@@ -16,13 +16,12 @@ function ProductSingle() {
     useEffect(() => {
 
         const getProduct = () => {
-            //setLoading(true);
+           
             fetch(`https://fakestoreapi.com/products/${id}`)
                 .then(res => res.json())
                 .then(json => {
                     setProduct(json);
-                    //console.log(json);
-                    //setLoading(false);
+                   
                 })
 
         }
