@@ -38,16 +38,20 @@ function Login() {
      
     // }
     // else {
-      alert("Login successfully")
+      
     // }
+
+    alert("Login successfully")
     
   }
-  function handleChange(e) {
-    e.preventDefault();
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    console.log(formData);
-  }
+
+
+  // function handleChange(e) {
+  //   e.preventDefault();
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  //   console.log(formData);
+  // }
 
   return (
     <div>
@@ -56,13 +60,13 @@ function Login() {
       <form className="login-container">
 
         <div class="  form-outline mb-4">
-          <input type="email" placeholder="Email" class="form-control" name="email" id="email" onChange={handleChange} value={email}/>
+          <input type="email" placeholder="Email" class="form-control" name="email" id="email"  value={email}/>
           
         </div>
 
 
         <div class="form-outline mb-4">
-          <input type="password" name="password" placeholder="Password" id="password" onChange={handleChange} value={password} class="form-control" />
+          <input type="password" name="password" placeholder="Password" id="password"  value={password} class="form-control" />
           
         </div>
 

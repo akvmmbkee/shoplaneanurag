@@ -10,14 +10,14 @@ function MenCloth() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState();
 
-  // async call.
+ 
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/category/men's clothing")
       .then((res) => res.json())
       .then((jsonResponse) => {
        
-        // we are changing state of component.
+       
         setProducts(jsonResponse);
         setError();
       })

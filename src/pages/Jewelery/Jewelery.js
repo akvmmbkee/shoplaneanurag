@@ -17,7 +17,7 @@ function Jewelery() {
       .then((res) => res.json())
       .then((jsonResponse) => {
       
-        // we are changing state of component.
+       
         setProducts(jsonResponse);
         setError();
       })

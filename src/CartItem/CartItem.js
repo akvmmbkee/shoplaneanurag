@@ -19,7 +19,7 @@ function CartItem(props) {
   }
   const handelRemoveQuantity = () => {
    
-    // using dispatch to send remove action and payload.
+  
 
     dispatch(decreaseCart(items));
   }

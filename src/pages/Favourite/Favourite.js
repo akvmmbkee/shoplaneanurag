@@ -5,6 +5,8 @@ import { cartSelector } from "../../reducers/cartReducer";
 import { Link } from "react-router-dom";
 import Footer from '../../Footer/Footer';
 import FavouriteItem from "../../Favourite/FavouriteItem";
+
+
 const FavCart = (props) => {
   const items = useSelector(cartSelector).Favourite;
 

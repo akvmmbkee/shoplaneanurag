@@ -26,7 +26,7 @@ function ProductSingle() {
 
         }
         getProduct();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+       
     }, []);
 
 
@@ -35,7 +35,7 @@ function ProductSingle() {
     const dispatch = useDispatch();
 
     function handleAddToCartEvent() {
-        // using dispatch to send add action and payload.
+      
         dispatch(add(product));
         setchangeBtn(!changeBtn);
 
@@ -49,7 +49,7 @@ function ProductSingle() {
             dispatch(removeFromFavCart(product.id));
         }
 
-        // using dispatch to send add action and payload.
+      
 
     }
     function handleRemoveToCart() {

@@ -7,6 +7,8 @@ import { getTotal, clearCart } from "../../reducers/cartReducer";
 import { useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import Footer from '../../Footer/Footer';
+
+
 const Cart = (props) => {
   const items = useSelector(cartSelector).value;
   const totaBill = useSelector(cartSelector).totalPrice;

@@ -15,7 +15,7 @@ function FavouriteItem(props) {
     setchangeBtn(!changeBtn);
   }
   function handleAddToCartEvent() {
-    // using dispatch to send add action and payload.
+    
     dispatch(add(items));
     setchangeBtn(!changeBtn);
 

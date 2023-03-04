@@ -25,11 +25,11 @@ const cartSlice = createSlice({
             const itemIndex = state.value.findIndex((item)=>item.id === action.payload.id);
             if(itemIndex >=0){
                 state.value[itemIndex].quantity += 1;
-                //console.log(state.value[itemIndex].quantity);
+               
             }
             else{
                 const tempProduct = {...action.payload, quantity: 1};
-                //console.log(tempProduct);
+                
                 state.value.push(tempProduct); 
             }
                        
@@ -83,9 +83,9 @@ const cartSlice = createSlice({
         
         },    
 });
-// exporting actions for components to call.
+
 export const { add, removeFromCart,decreaseCart,getTotal,clearCart,addFav,removeFromFavCart,addUser} = cartSlice.actions;
-// selector to select cart data.
+
 export const cartSelector = (state)=> state.cartItems;
 export default cartSlice.reducer;
 
