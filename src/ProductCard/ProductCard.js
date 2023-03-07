@@ -21,15 +21,18 @@ function ProductCard(props) {
     dispatch(add(product));
     setchangeBtn(!changeBtn);
     setNotify(true);
+    
 
   }
   function handleAddToFavourite() {
     if (!changeColor) {
       setChangeColor(!changeColor)
       dispatch(addFav(product));
+      
     } else {
       setChangeColor(!changeColor)
       dispatch(removeFromFavCart(product.id));
+      
     }
 
    
@@ -38,6 +41,7 @@ function ProductCard(props) {
   function handleRemoveToCart() {
     dispatch(removeFromCart(product.id));
     setchangeBtn(!changeBtn);
+    
   }
   
 

@@ -18,6 +18,7 @@ const cartSlice = createSlice({
         // define actions.
         addFav:(state,action)=>{
             state.Favourite.push(action.payload);
+            
 
         },
         
@@ -38,6 +39,7 @@ const cartSlice = createSlice({
             const filteredCart = state.value.filter((item) => item.id !== action.payload);
                
                 state.value=filteredCart;
+                
             
         },
         removeFromFavCart:(state,action)=>{
